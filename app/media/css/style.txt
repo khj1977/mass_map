@@ -1,0 +1,287 @@
+	<Style id="nhkhighlight">
+		<IconStyle>
+			<color>4cffffff</color>
+			<scale>1.7</scale>
+			<Icon>
+				<href>http://mapping.jp/project311/media_coverage/green.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>1</scale>
+		</LabelStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	
+	<StyleMap id="nhk">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#nhknormal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#nhkhighlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="nhknormal">
+		<IconStyle>
+			<color>4cffffff</color>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://mapping.jp/project311/media_coverage/green.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	
+	<Style id="nihontvhighlight">
+		<IconStyle>
+			<color>4cffffff</color>
+			<scale>1.7</scale>
+			<Icon>
+				<href>http://mapping.jp/project311/media_coverage/purple.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>1</scale>
+		</LabelStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<StyleMap id="nihontv">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#nihontvnormal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#nihontvhighlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="nihontvnormal">
+		<IconStyle>
+			<color>4cffffff</color>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://mapping.jp/project311/media_coverage/purple.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+
+	<Style id="tvasahihighlight">
+		<IconStyle>
+			<color>4cffffff</color>
+			<scale>1.7</scale>
+			<Icon>
+				<href>http://mapping.jp/project311/media_coverage/orange.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>1</scale>
+		</LabelStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<StyleMap id="tvasahi">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#tvasahinormal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#tvasahihighlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="tvasahinormal">
+		<IconStyle>
+			<color>4cffffff</color>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://mapping.jp/project311/media_coverage/orange.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	
+	<Style id="tbshighlight">
+		<IconStyle>
+			<color>4cffffff</color>
+			<scale>1.7</scale>
+			<Icon>
+				<href>http://mapping.jp/project311/media_coverage/cyan.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>1</scale>
+		</LabelStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<StyleMap id="tbs">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#tbsnormal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#tbshighlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="tbsnormal">
+		<IconStyle>
+			<color>4cffffff</color>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://mapping.jp/project311/media_coverage/cyan.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+
+	<Style id="fujitvhighlight">
+		<IconStyle>
+			<color>4cffffff</color>
+			<scale>1.7</scale>
+			<Icon>
+				<href>http://mapping.jp/project311/media_coverage/blue.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>1</scale>
+		</LabelStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<StyleMap id="fujitv">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#fujitvnormal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#fujitvhighlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="fujitvnormal">
+		<IconStyle>
+			<color>4cffffff</color>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://mapping.jp/project311/media_coverage/blue.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+
+	<Style id="tvtokyohighlight">
+		<IconStyle>
+			<color>4cffffff</color>
+			<scale>1.7</scale>
+			<Icon>
+				<href>http://mapping.jp/project311/media_coverage/yellow.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>1</scale>
+		</LabelStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<StyleMap id="tvtokyo">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#tvtokyonormal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#tvtokyohighlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="tvtokyonormal">
+		<IconStyle>
+			<color>4cffffff</color>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://mapping.jp/project311/media_coverage/yellow.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	
+	<Style id="asahishinbunhighlight">
+		<IconStyle>
+			<color>4cffffff</color>
+			<scale>1.7</scale>
+			<Icon>
+				<href>http://mapping.jp/project311/media_coverage/red.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>1</scale>
+		</LabelStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<StyleMap id="asahishinbun">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#asahishinbunnormal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#asahishinbunhighlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="asahishinbunnormal">
+		<IconStyle>
+			<color>4cffffff</color>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://mapping.jp/project311/media_coverage/red.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>

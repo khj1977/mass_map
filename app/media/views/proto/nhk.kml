@@ -1,0 +1,514 @@
+<?php print('<?xml version="1.0" encoding="UTF-8"?>' . "\n"); ?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>mass-media-coverage-map</name>
+
+		<open>1</open>
+	
+<!-- kmlスタイルここから -->
+
+	<Style id="nhkhighlight">
+		<IconStyle>
+			<color>99ffffff</color>
+			<scale>2.0</scale>
+			<Icon>
+				<href>http://mapping.jp/project311/media_coverage/blue.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>1</scale>
+	</LabelStyle>
+		<LineStyle>
+			<color>22ffffff</color>
+		</LineStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<StyleMap id="nhk">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#nhknormal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#nhkhighlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="nhknormal">
+		<IconStyle>
+			<color>99ffffff</color>
+			<scale>1.8</scale>
+			<Icon>
+				<href>http://mapping.jp/project311/media_coverage/blue.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+	</LabelStyle>
+		<LineStyle>
+			<color>22ffffff</color>
+		</LineStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	
+	<Style id="nihontvhighlight">
+		<IconStyle>
+			<color>99ffffff</color>
+			<scale>2.0</scale>
+			<Icon>
+				<href>http://mapping.jp/project311/media_coverage/purple.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>1</scale>
+	</LabelStyle>
+		<LineStyle>
+			<color>22ffffff</color>
+		</LineStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<StyleMap id="nihontv">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#nihontvnormal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#nihontvhighlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="nihontvnormal">
+		<IconStyle>
+			<color>99ffffff</color>
+			<scale>1.8</scale>
+			<Icon>
+				<href>http://mapping.jp/project311/media_coverage/purple.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+	</LabelStyle>
+		<LineStyle>
+			<color>22ffffff</color>
+		</LineStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+
+	<Style id="tvasahihighlight">
+		<IconStyle>
+			<color>99ffffff</color>
+			<scale>2.0</scale>
+			<Icon>
+				<href>http://mapping.jp/project311/media_coverage/orange.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>1</scale>
+	</LabelStyle>
+		<LineStyle>
+			<color>22ffffff</color>
+		</LineStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<StyleMap id="tvasahi">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#tvasahinormal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#tvasahihighlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="tvasahinormal">
+		<IconStyle>
+			<color>99ffffff</color>
+			<scale>1.8</scale>
+			<Icon>
+				<href>http://mapping.jp/project311/media_coverage/orange.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+	</LabelStyle>
+		<LineStyle>
+			<color>22ffffff</color>
+		</LineStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	
+	<Style id="tbshighlight">
+		<IconStyle>
+			<color>99ffffff</color>
+			<scale>2.0</scale>
+			<Icon>
+				<href>http://mapping.jp/project311/media_coverage/cyan.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>1</scale>
+	</LabelStyle>
+		<LineStyle>
+			<color>22ffffff</color>
+		</LineStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<StyleMap id="tbs">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#tbsnormal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#tbshighlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="tbsnormal">
+		<IconStyle>
+			<color>99ffffff</color>
+			<scale>1.8</scale>
+			<Icon>
+				<href>http://mapping.jp/project311/media_coverage/cyan.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+	</LabelStyle>
+		<LineStyle>
+			<color>22ffffff</color>
+		</LineStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+
+	<Style id="fujitvhighlight">
+		<IconStyle>
+			<color>99ffffff</color>
+			<scale>2.0</scale>
+			<Icon>
+				<href>http://mapping.jp/project311/media_coverage/green.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>1</scale>
+	</LabelStyle>
+		<LineStyle>
+			<color>22ffffff</color>
+		</LineStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<StyleMap id="fujitv">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#fujitvnormal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#fujitvhighlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="fujitvnormal">
+		<IconStyle>
+			<color>99ffffff</color>
+			<scale>1.8</scale>
+			<Icon>
+				<href>http://mapping.jp/project311/media_coverage/green.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+	</LabelStyle>
+		<LineStyle>
+			<color>22ffffff</color>
+		</LineStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+
+	<Style id="tvtokyohighlight">
+		<IconStyle>
+			<color>99ffffff</color>
+			<scale>2.0</scale>
+			<Icon>
+				<href>http://mapping.jp/project311/media_coverage/yellow.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>1</scale>
+	</LabelStyle>
+		<LineStyle>
+			<color>22ffffff</color>
+		</LineStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<StyleMap id="tvtokyo">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#tvtokyonormal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#tvtokyohighlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="tvtokyonormal">
+		<IconStyle>
+			<color>99ffffff</color>
+			<scale>1.8</scale>
+			<Icon>
+				<href>http://mapping.jp/project311/media_coverage/yellow.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+	</LabelStyle>
+		<LineStyle>
+			<color>22ffffff</color>
+		</LineStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+
+	<Style id="asahi_shinbunhighlight">
+		<IconStyle>
+			<color>99ffffff</color>
+			<scale>2.0</scale>
+			<Icon>
+				<href>http://mapping.jp/project311/media_coverage/magenta.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>1</scale>
+	</LabelStyle>
+		<LineStyle>
+			<color>22ffffff</color>
+		</LineStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<StyleMap id="asahi_shinbun">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#asahi_shinbunnormal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#asahi_shinbunhighlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="asahi_shinbunnormal">
+		<IconStyle>
+			<color>99ffffff</color>
+			<scale>1.8</scale>
+			<Icon>
+				<href>http://mapping.jp/project311/media_coverage/magenta.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+	</LabelStyle>
+		<LineStyle>
+			<color>22ffffff</color>
+		</LineStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+
+<!-- kmlスタイルここまで -->
+
+	<Folder>
+		<name>年月日</name>
+		<open>1</open>
+
+<!-- 単一の位置情報の場合　-->
+
+		<Folder>
+			<name>メディア名と日時</name>
+			<open>1</open>
+			<Placemark>
+				<name>メディア名：記事の見出し</name>
+				<description><![CDATA[<p class="balloon">記事内容</p>]]></description>
+				<Point>
+					<extrude>1</extrude>
+					<altitudeMode>relativeToGround</altitudeMode>
+					<coordinates>経度,緯度,20000</coordinates>
+				</Point>
+				<TimeSpan>
+					<begin>YYYY-MM-DDTHH:MM:SS+09:00</begin>
+					<end>YYYY-MM-DDTHH:MM:SS+09:00</end>
+　　　　　　　　　　　　　　　　　　　　<!--
+　　　　　　　　　　　　　　　　　　　 放映時間はDBにないので，endは1時間後に設定してください　
+								-->　　　　
+				</TimeSpan>
+				<styleUrl>#nhk</styleUrl>
+				
+								<!--
+								以下の#以降を各局ごとに指定．たとえば
+								
+								<styleUrl>#nhk</styleUrl>
+								
+								NHK総合 #nhk
+								テレビ朝日　#tvasahi
+								日本テレビ #nihontv
+								フジテレビ　#fujitv
+								TBS #tbs
+								テレビ東京　＃tvtokyo
+								朝日新聞 #asahi_shinbun
+								-->
+				
+			</Placemark>
+		</Folder>
+
+<!-- 複数の位置情報の場合（以下の例は三箇所）-->
+
+		<Folder>
+			<name>メディア名と日時</name>
+			<open>1</open>
+			<Placemark>
+				<name>メディア名：記事の見出し</name>
+				<description><![CDATA[<p class="balloon">記事内容</p>]]></description>
+				<Point>
+					<extrude>1</extrude>
+					<altitudeMode>relativeToGround</altitudeMode>
+					<coordinates>経度a,緯度a,20000</coordinates>
+				</Point>
+				<TimeSpan>
+					<begin>YYYY-MM-DDTHH:MM:SS+09:00</begin>
+					<end>YYYY-MM-DDTHH:MM:SS+09:00</end>
+　　　　　　　　　　　　　　　　　　　　<!--
+　　　　　　　　　　　　　　　　　　　 放映時間はDBにないので，endは1時間後に設定してください　
+								-->
+　　　　　　　　　　　　　　　　　　　　</TimeSpan>
+　　　　　　　　　　　　　　　　　　　　<styleUrl>#nhk</styleUrl>
+				
+									<!--
+									
+								以下の#以降を各局ごとに指定．たとえば
+								
+								<styleUrl>#nhk</styleUrl>
+									
+								NHK総合 #nhk
+								テレビ朝日　#tvasahi
+								日本テレビ #nihontv
+								フジテレビ　#fujitv
+								TBS #tbs
+								テレビ東京　＃tvtokyo
+								朝日新聞 #asahi_shinbun
+								-->
+			</Placemark>
+			<Placemark>
+				<name>メディア名：記事の見出し</name>
+				<description><![CDATA[<p class="balloon">記事内容</p>]]></description>
+				<Point>
+					<extrude>1</extrude>
+					<altitudeMode>relativeToGround</altitudeMode>
+					<coordinates>経度b,緯度b,20000</coordinates>
+				</Point>
+				<TimeSpan>
+					<begin>YYYY-MM-DDTHH:MM:SS+09:00</begin>
+					<end>YYYY-MM-DDTHH:MM:SS+09:00</end>
+　　　　　　　　　　　　　　　　　　　　<!--
+　　　　　　　　　　　　　　　　　　　 放映時間はDBにないので，endは1時間後に設定してください　
+								-->
+　　　　　　　　　　　　　　　　　　　　</TimeSpan>
+　　　　　　　　　　　　　　　　　　　　<styleUrl>各局ごとに変更</styleUrl>
+
+								<!--
+								
+								以下の#以降を各局ごとに指定．たとえば
+								
+								<styleUrl>#nhk</styleUrl>
+								
+								NHK総合 #nhk
+								テレビ朝日　#tvasahi
+								日本テレビ #nihontv
+								フジテレビ　#fujitv
+								TBS #tbs
+								テレビ東京　＃tvtokyo
+								朝日新聞 #asahi_shinbun
+								-->
+
+			</Placemark>
+			<Placemark>
+				<name>メディア名：記事の見出し</name>
+				<description><![CDATA[<p class="balloon">記事内容</p>]]></description>
+				<Point>
+					<extrude>1</extrude>
+					<altitudeMode>relativeToGround</altitudeMode>
+					<coordinates>経度c,緯度c,20000</coordinates>
+				</Point>
+				<TimeSpan>
+					<begin>YYYY-MM-DDTHH:MM:SS+09:00</begin>
+					<end>YYYY-MM-DDTHH:MM:SS+09:00</end>
+								<!--
+　　　　　　　　　　　　　　　　　　　 放映時間はDBにないので，endは1時間後に設定してください　
+								-->
+				</TimeSpan>
+				<styleUrl>各局ごとに変更</styleUrl>
+
+								以下の#以降を各局ごとに指定．たとえば
+								
+								<styleUrl>#nhk</styleUrl>
+				
+								<!--
+								NHK総合 #nhk
+								テレビ朝日　#tvasahi
+								日本テレビ #nihontv
+								フジテレビ　#fujitv
+								TBS #tbs
+								テレビ東京　＃tvtokyo
+								朝日新聞 #asahi_shinbun
+								-->
+				
+			</Placemark>
+
+<!-- 多角形はいったんペンディング -->
+
+			<Placemark>
+				<name>メディア名と日時</name>
+<description><![CDATA[<p class="balloon">記事内容</p>]]</description>
+				<Polygon>
+					<tessellate>1</tessellate>
+<coordinates>経度a,緯度a,0 経度b,緯度b,0 経度c,経度c,0</coordinates>
+<!--
+ここは相談...3箇所以上になったときに，閉じた多角形にしたい．どう計算させるのがよいか？
+-->
+				</Polygon>
+				<TimeSpan>
+					<begin>YYYY-MM-DDTHH:MM:SS+09:00</begin>
+					<end>YYYY-MM-DDTHH:MM:SS+09:00</end>
+								<!--
+　　　　　　　　　　　　　　　　　　　 放映時間はDBにないので，endは1時間後に設定してください　
+								-->
+　　　　　　　　　　　　　　　　　　　　</TimeSpan>
+			</Placemark>
+			
+<!-- 多角形ここまで -->			
+			
+		</Folder>
+	</Folder>
+</Document>
+</kml>
+

@@ -1,0 +1,81 @@
+<?php print('<?xml version="1.0" encoding="UTF-8"?>' . "\n"); ?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>mass-media-coverage-map</name>
+
+<!-- kmlスタイル．各メディアごとに変えますがまずはAsahi用 -->
+	
+		<open>1</open>
+		<Style id="asahi">
+			<IconStyle>
+				<color>80ffffff</color>
+				<scale>0.8</scale>
+				<Icon>
+					<href>http://mapping.jp/project311/media_coverage/red.png</href>
+				</Icon>
+				<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+			</IconStyle>
+			<LabelStyle>
+				<scale>0</scale>
+			</LabelStyle>
+		</Style>
+		<StyleMap id="asahistyle">
+			<Pair>
+				<key>normal</key>
+				<styleUrl>#asahi</styleUrl>
+			</Pair>
+			<Pair>
+				<key>highlight</key>
+				<styleUrl>#asahi_hl</styleUrl>
+			</Pair>
+		</StyleMap>
+		<Style id="asahi_hl">
+			<IconStyle>
+				<color>80ffffff</color>
+				<scale>1.2</scale>
+				<Icon>
+					<href>http://mapping.jp/project311/media_coverage/red.png</href>
+				</Icon>
+				<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+			</IconStyle>
+			<LabelStyle>
+				<scale>0.7</scale>
+				<color>80ffffff</color>
+			</LabelStyle>
+		</Style>
+		
+<!-- スタイルシートここまで　-->		
+
+
+	<Folder>
+		<name>2012年9月24日</name>
+		<open>1</open>
+
+<!-- 単一の位置情報の場合　-->
+<?php foreach($viewVals as $element) {  ?>
+		<Folder>
+			<name><?php echo $element["media_name"]; ?></name>
+			<open>1</open>
+			<Placemark>
+				<name><?php printf("%s：%s", $element["media_name"], $element["title"]) ?></name>
+				<description><![CDATA[<p><?php echo $element["data"]; ?></p>]]></description>
+				<Point>
+					<coordinates><?php printf("%s,%s", $element["geos"]["geo1"], $element["geos"]["geo2"]) ?>,0</coordinates>
+				</Point>
+				<TimeSpan>
+                                        <!-- 少なくとも朝日では時とか秒の指定はない -->
+					<begin><?php echo $element["year"]; ?>-<?php echo $element["month"]; ?>-<?php echo $element["day"]; ?>T<?php echo $element["hour"]; ?>:<?php echo $element["min"]; ?>:00+09:00</begin>
+					<end><?php echo $element["year"]; ?>-<?php echo $element["month"]; ?>-<?php echo $element["day"]; ?>T<?php echo $element["hour"]; ?>:<?php echo $element["min"]; ?>:00+09:00</end>
+					<!--
+　　　　　　　　　　　　　　　　　　　　．．．一日の記事（新聞等）なら一日の長さ，TV等なら放映時間を
+　　　　　　　　　　　　　　　　　　　　-->　　　　　　　
+				</TimeSpan>
+                                <styleUrl>#asahistyle</styleUrl>
+			</Placemark>
+		</Folder>
+<?php } ?>
+	</Folder>
+
+</Document>
+</kml>
+
