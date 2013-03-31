@@ -21,7 +21,7 @@ class InternalConf {
 		$this->conf["slave_pass"] = "";
 		$this->conf["slave_db"] = "";
 
-    $this->conf["gmaps_key"] = "ABQIAAAAQ7ZCEHnmFpFp6SkxpZbaGRT6E8Fh0l8URabCZ0uc_3zceM8mURQCl1_9zOtXhX5yKEZFamZYKizncA";
+    $this->conf["gmaps_key"] = "";
     $this->conf["gmaps_host"] = "maps.google.com";
 
     $this->conf["log_path"] = $this->conf["base_path"] . "/logs/";
