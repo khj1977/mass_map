@@ -20,6 +20,6 @@ This program requies some data such as news related 3.11. However, it is not con
 
 Although the code and algorithm is just a quick hack, output generated KML has enough accuracy.
 
-Note that framework made by me is inspired by framework of SpicySoft (OSS).
+Note that framework made by me and used for this project is inspired by framework of SpicySoft (OSS).
 
 For detail, please check the above URL.
