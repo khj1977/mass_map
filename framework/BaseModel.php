@@ -6,8 +6,8 @@ require_once("framework/Env.php");
 // connection and cache objects are holded by instance of Env class.
 class BaseModel {
 
-	public function __construct() {
-	}
+  public function __construct() {
+  }
 
 }
 
