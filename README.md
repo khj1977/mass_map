@@ -7,7 +7,7 @@
 
 プログラムとアルゴリズム自体はクイックハックでたいしたことないですが、最終出力は精度よく出ているようで、その後他所でのプロジェクトに引き継がれてます。
 
-また、フレームワークはSpicySoft (OSS) のものにインスパイアされたものです。
+また、フレームワークはSpicySoft (OSS) のものにインスパイアされたものです。このプロジェクト用に外だししたもので、未完です。
 
 詳しくは上記URLを参照下さい。
 
@@ -20,6 +20,6 @@ This program requies some data such as news related 3.11. However, it is not con
 
 Although the code and algorithm is just a quick hack, output generated KML has enough accuracy.
 
-Note that framework made by me and used for this project is inspired by framework of SpicySoft (OSS).
+Note that framework made by me and used for this project is inspired by framework of SpicySoft (OSS). Development of this framework is incomplete since this project does not require full code of the framework.
 
 For detail, please check the above URL.
