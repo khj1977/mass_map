@@ -32,7 +32,12 @@ class Dispatcher {
     $controller = new $controllerClassName();
     
     $actionName = $this->action;
-    return $controller->$actionName($arguments);
+
+    $controller->preAction();
+    $actionResult =  $controller->$actionName($arguments);
+    $controller->postAction();
+
+    return $actionResult;
   }
   
   public function getViewPath() {
