@@ -19,7 +19,10 @@ abstract class BaseApplication {
     // execute action on controller
     $dispatcher = new Dispatcher();
     
+
+    $this->preRun();
     $viewVals = $dispatcher->dispatch($args);
+    $this->postRun();
     
     $viewPath = $dispatcher->getViewPath();
     require_once($viewPath);
